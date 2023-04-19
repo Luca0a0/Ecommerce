@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+.productManagement.notActive{
+	display:none;
+}
+.prodotto{
+	display: inline-block;
+	border: 1px solid black;
+	width: 140px;
+	height: 200px;
+	justify-content:top;
+	align-items:top;
+	gap: 15px;
+}
+.prodotto #pro1{
+	display:flex;
+	width: 100%;
+	height: 50%;
+		
+}
+
+.header {
+    border: 1px solid red;
+    width: 100%;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+	justify-content: flex-end;
+	align-items: center
+}
+
+.flexWrapper {
+	display: flex;
+	width: 20%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 15px;
+	gap: 15px;
+}
+
+.flexWrapper div {
+	display: flex;
+	width: calc(100% - 90px);
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 15px;
+}
+
+.flexWrapper .loggedFields {
+	display: none;
+}
+
+#carrelloImg {
+    height: 40px;
+	width: 40px;
+}
+
+.mainPage {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.userFields {
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    margin-bottom: 0.1rem;
+}
+
+.registerDiv {
+	display: none;
+}
+
+.loginDiv {
+	display: none;
+}
+
+.cartDiv{
+	display: none;
+}
+
+.cartDiv.active{
+	display: flex;
+	background-color: green;
+}
+
+.registerDiv.active {
+	display: flex;
+}
+
+.loginDiv.active {
+	display: flex;
+}

@@ -1,0 +1,3 @@
+connesso DB
+SELECT * FROM UTENTI WHERE email='a' and password_utente='a'
+a
