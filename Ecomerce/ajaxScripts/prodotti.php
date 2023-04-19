@@ -1,7 +1,7 @@
 <?php
     require("../db/conn.php");
     $a="";
-    $myfile = fopen("test.txt", "w");
+    //$myfile = fopen("test.txt", "w");
     
     if($conn != null) {
         $miaquery="SELECT * FROM prodotti"; 

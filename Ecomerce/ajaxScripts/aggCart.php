@@ -1,7 +1,8 @@
 <?php
     require("../db/conn.php");
     $a="";
-    $myfile = fopen("test.txt", "w");
+    $b="";
+    //$myfile = fopen("test.txt", "w");
     $datiRicevuti = file_get_contents('php://input');
     $input = json_decode($datiRicevuti, TRUE);
     
@@ -18,7 +19,7 @@
             $result = $conn->query($miaquery);
 
             $row = $result->fetch_array(MYSQLI_ASSOC);
-            $row_cnt = mysqli_num_rows($result);
+            $row_cnt = mysqli_num_rows($row);
 
             //fwrite($myfile,array_keys($row). "\n");
         
@@ -28,8 +29,8 @@
                 for($i=0; $i<=$row_cnt; $i++){
                 
                 
-                    if($a!=$row['nome_f']){
-                        $a=$row['nome_f'];
+                    if($b!=$row['nome_f']){
+                        $b=$row['nome_f'];
                 ?>
                     <div class="prodotto">
                         <img src="./media/<?php  echo $row['nome_f'];?>" id="pro1">
